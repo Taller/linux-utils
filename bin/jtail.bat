@@ -1,1 +1,1 @@
-java -cp jlinux-utils.jar com.github.taller.lu.impl.TAIL
+java -cp jlinux-utils.jar com.github.taller.lu.impl.TAIL %1 %2

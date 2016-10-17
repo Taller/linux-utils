@@ -1,1 +1,1 @@
-java -cp jlinux-utils.jar com.github.taller.lu.impl.HEAD
+java -cp jlinux-utils.jar com.github.taller.lu.impl.HEAD %*
