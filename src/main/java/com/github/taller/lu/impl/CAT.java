@@ -20,7 +20,7 @@ public class CAT extends AbstractCommand implements ConsoleCommand {
     static {
         usage = "jcat [files]\n" +
                 "Outputs 'files' content.";
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
+        knownKeys.add("--help\t \tPrints this help.");
     }
 
     public CAT(String[] args) {

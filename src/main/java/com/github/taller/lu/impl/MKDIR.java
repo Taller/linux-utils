@@ -17,8 +17,8 @@ public class MKDIR extends AbstractCommand implements ConsoleCommand {
     static {
         usage = "jmkdir [-p] [dir1] [dir2] ...\n" +
                 "Create directories 'dir1', 'dir2', etc.";
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
-        knownKeys.add(new KeyDescriptions("-p", "No error if existing, make parent directories as needed."));
+        knownKeys.add("--help\t \tPrints this help.");
+        knownKeys.add("-p\t \tNo error if existing, make parent directories as needed.");
     }
 
     public MKDIR(String[] args) {

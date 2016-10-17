@@ -13,7 +13,7 @@ public class RMDIR extends AbstractCommand implements ConsoleCommand {
     static {
         usage = "jrmdir [dir1] [dir2] ...\n" +
                 "Removes 'dir1', 'dir2', etc.";
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
+        knownKeys.add("--help\t \tPrints this help.");
     }
 
     public RMDIR(String[] args) {

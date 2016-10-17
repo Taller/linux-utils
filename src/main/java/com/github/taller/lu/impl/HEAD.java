@@ -21,8 +21,8 @@ public class HEAD extends AbstractCommand implements ConsoleCommand {
     static {
         usage = "jhead [-n] [files]\n" +
                 "Output 'n' or 10 first lines from file.";
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
-        knownKeys.add(new KeyDescriptions("-n", "Output the first 'n' lines instead of the first 10."));
+        knownKeys.add("--help\t \tPrints this help.");
+        knownKeys.add("-n\t \tOutput the first 'n' lines instead of the first 10.");
     }
 
 

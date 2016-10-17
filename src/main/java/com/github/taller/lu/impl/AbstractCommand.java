@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -15,7 +14,7 @@ public abstract class AbstractCommand implements Command {
 
     protected static String usage = "";
 
-    protected static final Set<KeyDescriptions> knownKeys = new HashSet<>();
+    protected static final Set<String> knownKeys = new LinkedHashSet<>();
 
     protected LinkedHashSet<String> output = new LinkedHashSet<>();
 

@@ -26,9 +26,9 @@ public class CP extends AbstractCommand implements ConsoleCommand {
                 "Copy files from source to target.\n" +
                 "Wildcards are not supported.\n" +
                 "Target files are not supported.";
-        knownKeys.add(new KeyDescriptions("-r", "Recursively creates files and dirs."));
-        knownKeys.add(new KeyDescriptions("--parents", "Use full source file name under <target>"));
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
+        knownKeys.add("-r\t \tRecursively creates files and dirs.");
+        knownKeys.add("--parents\t \tUse full source file name under <target>");
+        knownKeys.add("--help\t \tPrints this help.");
     }
 
     private boolean isRecursive = false;

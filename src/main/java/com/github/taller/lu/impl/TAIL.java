@@ -23,9 +23,9 @@ public class TAIL extends AbstractCommand implements ConsoleCommand {
         usage = "jtail [-f | -n] file\n" +
                 "Output last 'n' lines from file.\n" +
                 "Only one file is supported.\n";
-        knownKeys.add(new KeyDescriptions("-f", "Output appended data as the file grows."));
-        knownKeys.add(new KeyDescriptions("-n", "Output the last 'n' lines, instead of the last 10."));
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
+        knownKeys.add("-f\t \tOutput appended data as the file grows.");
+        knownKeys.add("-n\t \tOutput the last 'n' lines, instead of the last 10.");
+        knownKeys.add("--help\t \tPrints this help.");
     }
 
     public TAIL(String[] args) {
@@ -88,7 +88,6 @@ public class TAIL extends AbstractCommand implements ConsoleCommand {
                         if (fileLength > lastKnownPosition) {
                             RandomAccessFile readFileAccess = new RandomAccessFile(followFile, "r");
                             readFileAccess.seek(lastKnownPosition);
-                            String line = null;
                             byte[] buf = new byte[1024];
                             int bufSize;
                             while ((bufSize = readFileAccess.read(buf)) > 0) {
@@ -97,7 +96,6 @@ public class TAIL extends AbstractCommand implements ConsoleCommand {
                                 LOGGER.debug(new String(l));
                                 lastKnownPosition += bufSize;
                             }
-                            //lastKnownPosition = readFileAccess.getFilePointer();
                             readFileAccess.close();
                         }
                     }

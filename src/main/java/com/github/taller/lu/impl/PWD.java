@@ -11,7 +11,7 @@ public class PWD extends AbstractCommand implements ConsoleCommand {
     static {
         usage = "jpwd\n" +
                 "Output current directory.";
-        knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
+        knownKeys.add("--help\t \tPrints this help.");
     }
 
     public PWD(String[] args) {
