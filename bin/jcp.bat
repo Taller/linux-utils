@@ -1,1 +1,1 @@
-java -cp jlinux-utils.jar com.github.taller.lu.impl.CP %*
+@java -cp %~dp0\jlinux-utils.jar com.github.taller.lu.impl.CP %*
