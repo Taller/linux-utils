@@ -19,9 +19,10 @@ public class HEAD extends AbstractCommand implements ConsoleCommand {
     private int headSize;
 
     static {
-        usage = "jhead [-n] [files]";
+        usage = "jhead [-n] [files]\n" +
+                "Output 'n' or 10 first lines from file.";
         knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
-        knownKeys.add(new KeyDescriptions("-n", "Print the first 'n' lines instead of the first 10."));
+        knownKeys.add(new KeyDescriptions("-n", "Output the first 'n' lines instead of the first 10."));
     }
 
 

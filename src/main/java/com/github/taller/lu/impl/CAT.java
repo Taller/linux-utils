@@ -18,7 +18,8 @@ public class CAT extends AbstractCommand implements ConsoleCommand {
     private static final int BUFFER_SIZE = 1_000_000; // about 1Mb
 
     static {
-        usage = "jcat [files]";
+        usage = "jcat [files]\n" +
+                "Outputs 'files' content.";
         knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
     }
 

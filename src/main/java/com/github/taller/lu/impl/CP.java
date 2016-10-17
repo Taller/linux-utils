@@ -23,6 +23,7 @@ public class CP extends AbstractCommand implements ConsoleCommand {
                 "jcp <source_files> <target_dir>\n" +
                 "jcp -r <source_dir> <target_dir>\n" +
                 "jcp -r --parents <path/to/source> <target_dir>\n" +
+                "Copy files from source to target.\n" +
                 "Wildcards are not supported.\n" +
                 "Target files are not supported.";
         knownKeys.add(new KeyDescriptions("-r", "Recursively creates files and dirs."));

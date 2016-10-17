@@ -11,7 +11,8 @@ public class RMDIR extends AbstractCommand implements ConsoleCommand {
     private Set<String> dirsToRemove = new LinkedHashSet<>();
 
     static {
-        usage = "jrmdir [dir1] [dir2] ...";
+        usage = "jrmdir [dir1] [dir2] ...\n" +
+                "Removes 'dir1', 'dir2', etc.";
         knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
     }
 

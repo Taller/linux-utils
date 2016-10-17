@@ -21,6 +21,7 @@ public class TAIL extends AbstractCommand implements ConsoleCommand {
 
     static {
         usage = "jtail [-f | -n] file\n" +
+                "Output last 'n' lines from file.\n" +
                 "Only one file is supported.\n";
         knownKeys.add(new KeyDescriptions("-f", "Output appended data as the file grows."));
         knownKeys.add(new KeyDescriptions("-n", "Output the last 'n' lines, instead of the last 10."));

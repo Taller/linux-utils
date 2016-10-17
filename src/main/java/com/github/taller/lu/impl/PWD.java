@@ -9,7 +9,8 @@ import java.io.File;
 public class PWD extends AbstractCommand implements ConsoleCommand {
 
     static {
-        usage = "jpwd - Shows current directory.";
+        usage = "jpwd\n" +
+                "Output current directory.";
         knownKeys.add(new KeyDescriptions("--help", "Prints this help."));
     }
 
