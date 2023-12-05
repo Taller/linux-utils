@@ -14,7 +14,7 @@
         <project.build.targetLevel>1.8</project.build.targetLevel>
 
         <slf4j.version>1.7.7</slf4j.version>
-        <logback.version>1.2.0</logback.version>
+        <logback.version>1.2.13</logback.version>
 
         <maven.buildnumber.version>1.2</maven.buildnumber.version>
         <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
